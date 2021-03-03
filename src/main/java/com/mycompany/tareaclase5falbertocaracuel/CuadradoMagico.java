@@ -11,7 +11,7 @@ package com.mycompany.tareaclase5falbertocaracuel;
  */
 public class CuadradoMagico {
 
-    int matriz[][];
+    private int matriz[][];
 
     public CuadradoMagico(int[][] matriz) {
         this.matriz = new int[3][3];
@@ -21,6 +21,25 @@ public class CuadradoMagico {
                 matriz[x][y] = (int) (Math.random() * 8 + 1);
             }
         }
+        
     }
 
+    public int[][] getMatriz() {
+        return matriz;
+    }
+
+    public void setMatriz(int[][] matriz) {
+        this.matriz = matriz;
+    }
+    
+    public void sumaFila(){
+        int suma=0;
+        for (int i = 0; i < matriz.length; i++) {
+            for (int j = 0; j < matriz.length; j++) {
+                  suma += matriz[i][j];              
+            }
+            System.out.println("Fila " + i + " =" + suma);
+            suma=0;
+        }
+    }
 }
