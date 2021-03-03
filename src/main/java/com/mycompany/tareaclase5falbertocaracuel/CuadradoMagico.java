@@ -42,4 +42,15 @@ public class CuadradoMagico {
             suma=0;
         }
     }
+    
+    public void sumaColumna(){
+        int suma=0;
+        for (int i = 0; i < matriz.length; i++) {
+            for (int j = 0; j < matriz.length; j++) {
+                  suma += matriz[j][i];              
+            }
+            System.out.println("Columna " + i + " =" + suma);
+            suma=0;
+        }
+    }
 }
