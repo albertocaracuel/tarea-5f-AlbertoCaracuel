@@ -11,18 +11,17 @@ package com.mycompany.tareaclase5falbertocaracuel;
  */
 public class CuadradoMagico {
 
-    private int matriz[][];
+    private int matriz[][]=new int[3][3];
 
-    public CuadradoMagico(int[][] matriz) {
-        this.matriz = new int[3][3];
-
+    public CuadradoMagico() {
         for (int x = 0; x < this.matriz.length; x++) {
             for (int y = 0; y < this.matriz[x].length; y++) {
                 this.matriz[x][y] = (int) (Math.random() * 8 + 1);
             }
         }
-
     }
+
+   
 
     public int[][] getMatriz() {
         return matriz;
@@ -84,7 +83,7 @@ public class CuadradoMagico {
             suma += diagoPrincipal[i];
 
         }
-        System.out.println("REsultado principal" + suma);
+        System.out.println("\n\nREsultado principal " + suma);
 
         System.out.println("\n\nDiagonal Secundaria");
         visualizarArray(diagoSecundaria);
@@ -95,7 +94,7 @@ public class CuadradoMagico {
 
         }
 
-        System.out.println("Resultado secundario" + suma1);
+        System.out.println("\n\nResultado secundario " + suma1);
     }
 
     public void imprimirMatriz() {
@@ -105,5 +104,9 @@ public class CuadradoMagico {
             }
             System.out.println();
         }
+    }
+    
+    public void esCuadradoMagico(){
+       
     }
 }

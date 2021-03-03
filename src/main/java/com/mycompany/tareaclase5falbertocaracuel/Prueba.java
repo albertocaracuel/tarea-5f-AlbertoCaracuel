@@ -10,5 +10,19 @@ package com.mycompany.tareaclase5falbertocaracuel;
  * @author alber
  */
 public class Prueba {
-    
+    public static void main(String[] args) {
+        
+        
+        CuadradoMagico uno=new CuadradoMagico();
+        
+        uno.imprimirMatriz();
+        
+        
+        uno.sumaColumna();
+        
+        uno.sumaFila();
+        
+        
+        uno.sumadiagonales();
+    }
 }
